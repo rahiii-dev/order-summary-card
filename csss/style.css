@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    display: grid;
+    place-content: center;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+}
+.wrapper{
+   font-family: 'Red Hat Display', sans-serif;
+   border-radius: 1.25rem;
+   width:50%;
+   margin: 0 auto;
+   overflow: auto;
+   text-align: center;
+   background-color: #fff;
+   box-shadow: 0px 25px 30px hsla(245, 75%, 52%,0.2);
+} 
+
+.heroimg{
+    width: 100%;
+}
+.content{
+    padding: 2.1875rem;
+}
+.content h3{
+    font-weight: 900;
+    margin-block: 0.9375rem;
+    color:  hsl(223, 47%, 23%);
+}
+.content p{
+    color:  hsl(224, 23%, 55%);
+    line-height: 1.7;
+    font-size: 0.875rem;
+}
+
+.plans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    margin-top: 2.5rem;
+    position: relative;
+}
+.plans img{
+    width: 2.5rem;
+    margin-right: 1.25rem;
+    position: absolute;
+    left: 0;
+}
+.plans div{
+    position: absolute;
+    left: 3.4375rem;
+}
+.plans a{
+    font-weight: bold;
+    color: hsl(245, 75%, 52%);
+    font-size: 0.75rem;
+    position: absolute;
+    right: 0;
+}
+.plans a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.plan{
+    display: block;
+    font-weight: 700;
+    color:  hsl(223, 47%, 23%);
+    margin-bottom: 0.125rem;
+}
+.price{
+    color:  hsl(224, 23%, 55%);
+}
+
+.btn{
+    display: block;
+    text-align: center;
+    border: none;
+    width: 90%;
+    height: 2.5rem;
+    border-radius:  0.625rem;
+    font-size: 0.875rem;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.btn-1{
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    margin-bottom: 0.625rem;
+    margin-top: 1.25rem;
+    box-shadow: 0px 20px 20px hsla(245, 75%, 52%,0.2);
+}
+.btn-1:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-2{
+    margin-bottom: 1.25rem;
+    color:  hsl(224, 23%, 55%);
+    background: none;
+}
+.btn-2:hover{
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+@media screen and (max-width:650px){
+    body{
+        background-image: url('../images/pattern-background-mobile.svg');
+    }
+    .wrapper{
+        width: 325px;
+    }
+}
